@@ -19,28 +19,18 @@ export function Navbar() {
           </Link>
 
           <div className="flex items-center gap-6 font-medium">
-            <Link
-              href="/buy"
-              className="transition hover:text-white/100"
-            >
-							Buy
+            <Link href="/buy" className="transition hover:text-white/100">
+              Add Your Project
             </Link>
-            <Link
-              href="/sell"
-              className="transition hover:text-white/100"
-            >
-							Sell
+            <Link href="/sell" className="transition hover:text-white/100">
+              Docs
             </Link>
           </div>
         </div>
 
         <div className="flex items-center justify-center gap-4">
           <div className="">
-            <ConnectButton
-              theme="dark"
-              client={client}
-              chain={NETWORK}
-            />
+            <ConnectButton theme="dark" client={client} chain={NETWORK} />
           </div>
         </div>
       </nav>
